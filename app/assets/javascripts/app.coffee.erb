@@ -1,0 +1,17 @@
+receta = angular.module('receta',[
+  'ngRoute',
+  'controllers',
+])
+
+receta.config([ '$routeProvider',
+  ($routeProvider)->
+    $routeProvider
+      .when('/',
+        templateUrl: "<%=asset_path('templates/index.html') %>"
+        controller: 'RecipesController'
+      )
+])
+
+controllers = angular.module('controllers',[])
+controllers.controller("RecipesController", [ '$scope',
+])
