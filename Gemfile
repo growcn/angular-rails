@@ -58,6 +58,7 @@ end
 
 gem 'bower-rails'
 
+gem "slim-rails"
 
 gem "foreman"
 group :production, :staging do
