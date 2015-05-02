@@ -1,6 +1,5 @@
-#source 'http://ruby.growcn.com'
-
-source 'https://ruby.taobao.org'
+source 'http://ruby.growcn.com'
+#source 'https://ruby.taobao.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -45,6 +44,14 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  #
+  gem 'rspec-rails', '~> 3.1'
+  gem 'factory_girl_rails', '1.4.0'
+  gem "capybara"
+  gem "database_cleaner"
+  gem "selenium-webdriver"
+
 end
 
 gem 'bower-rails'
@@ -56,3 +63,13 @@ group :production, :staging do
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
 end
+
+
+
+
+
+
+
+
+
+
